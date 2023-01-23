@@ -1,0 +1,84 @@
+@import url('https://fonts.google.com/specimen/Outfit');
+
+:root {
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Fraunces', serif;
+
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+.test {
+
+    background-color: var(--Light-gray);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+.qr {
+
+    width: 500px;
+    border: 23px solid white;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 24px;
+    overflow: hidden;
+    margin: auto;
+    top: 37px;
+    position: relative;
+}
+
+
+.qr__img {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    position: relative;
+    top: 10px;
+
+}
+
+h1 {
+    font-family: var(--font1);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+h2 {
+    font-family: var(--font1);
+    text-align: center;
+    color: gray;
+    font-weight: 400;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:600px) {
+
+
+    .test {
+
+        min-width: 63dvh;
+        min-height: 200dvh;
+    }
+
+    .qr {
+        width: 430px;
+
+        top: 120px;
+        position: relative;
+    }
+
+}
